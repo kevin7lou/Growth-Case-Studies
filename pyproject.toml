@@ -1,0 +1,90 @@
+[tool.poetry]
+name = "growth-case-studies"
+version = "0.1.0"
+description = ""
+authors = ["kevin7lou <1493360+kevin7lou@users.noreply.github.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+
+# Data manipulation
+numpy = ">=1.14.0,<2.0"
+pandas = ">=2.0"
+polars = "^1.4.1"
+
+# Data visualization
+matplotlib = "<3.8.0"
+seaborn = "^0.13.2"
+altair = "^5.3.0"
+plotly-express = "^0.4.1"
+mplfinance = "^0.12.10b0"
+
+# Statistics and statistical inference
+scipy = ">1.9.2"
+statsmodels = "^0.14.2"
+pingouin = "^0.5.4"
+lifelines = "^0.29.0"
+lifetimes = "^0.11.3"
+
+# Bayesian modeling
+pymc = ">=5.13.0,<5.16.0"
+pymc3 = "^3.11"
+pymc-marketing = "^0.10.0"
+arviz = "^0.20.0"
+
+# Machine learning
+scikit-learn = ">=1.4.2,<1.5.0"
+xgboost = "^2.1.1"
+lightgbm = "^4.5.0"
+shap = "^0.46.0"
+scikit-uplift = "^0.5.1"
+tensorflow = "^2.18.0"
+
+# AutoML
+pycaret = "^3.3.2"
+kaleido = "0.2.1"
+
+# Causal inference
+CausalInference = "^0.1.3"
+hypothetical = "^0.3.0"
+psmpy = "^0.3.13"
+
+# Time series analysis
+prophet = "^1.1.5"
+autots = "^0.6.15"
+ta-lib = "^0.6.0"
+
+# Data sources and financial data
+akshare = "^1.15.71"
+baostock = "^0.8.9"
+yfinance = "^0.2.51"
+
+# Database and query
+duckdb = "1.1.2"
+
+# File handling and Excel
+openpyxl = "^3.1.5"
+fastexcel = "^0.11.5"
+xlsxwriter = "^3.2.2"
+
+# Text processing and visualization
+jieba = "^0.42.1"
+wordcloud = "^1.9.4"
+
+# Development and interactive tools
+ipykernel = "^6.29.5"
+pygwalker = "^0.4.9.5"
+tk = "^0.1.0"
+pandasql = "^0.7.3"
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.2.2"
+pytest = "^8.3.4"
+black = "^25.1.0"
+isort = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
